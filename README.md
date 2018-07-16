@@ -9,7 +9,7 @@ The following topics are covered in labs:
 1. Lab 1 "Hello IoT" :- Embedded system architecture, development environment, sample applications, GPIO.
 2. Lab 2 "I am HoT" :- Sensors, interfaces, bus protocols, programming I<sup>2</sup>C devices.
 3. Lab 3 "Shine the Lights" :- Pulse Width Modulation, programming smart LEDs.
-4. Lab 4 "Dance with the Music" :- audio signal processing, I<sup>2</sup>S bus, programming I2S mic and processing sound.
+4. Lab 4 "Dance with the Music" :- audio signal processing, I<sup>2</sup>S bus, programming I<sup>2</sup>S microphone and processing sound.
 5. Lab 5 "Let's Talk" :- Embedded OS, bootloader, network programming.
 6. Lab 6 "Say Cheese" :- camera sensor, OpenCV programming.
 7. Lab 7 "Over the Rainbow" :- cloud programming and building a cloud service.
