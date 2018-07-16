@@ -22,10 +22,14 @@ Please familiarize yourself with the following concepts before proceed with this
 1. Install driver for USB to TTL-serial adapter. Plug in the USB cable to your laptop. If it is not recognized automatically, you need to install software for the adapter cable on your laptop. See instructions for [Windows](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable/software-installation-windows), [Mac](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable/software-installation-mac), or [Linux](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable/software-installation-linux))
 
 2. Connect the Pi Zero W to the TTL serial leads. Please proceed with __!CAUTION!__
+
   i. __!CAUTION!__ Make sure the USB end is disconnected from your laptop.
+
   ii. __!CAUTION!__ Make sure the colored leads are connected to the correct PINs on the Pi. Refer to the following diagram for connection.
+
   ![PZW Pinouts](http://pi4j.com/images/j8header-zero.png)
   ![TTL-serial to PZW](https://learn.adafruit.com/assets/41071)
+
   iii. Have your teammate and TA to help double check the connections.
 
 3. Insert MicroSD card to the card slot on Pi Zero W.
@@ -38,9 +42,20 @@ Please familiarize yourself with the following concepts before proceed with this
 
 7. Run command ```pwd```. You should see ```/user/pi``` as the result of this command. If so, then run ```ll``` to see the list of files in your home directory.
 
-8. Now, we need to shutdown the Pi and prepare the LED circuit. Run command ```sudo halt```. Wait for the green LED on the Pi to be off. Then unplug the USB end from your laptop.
+8. Now, we need to shutdown the Pi and prepare the LED circuit. Run command ```sudo halt```. Wait for the green LED on the Pi to be off. Then unplug the USB-TTL cable from your laptop.
 
-9. Wire up the following circuit.
+9. Wire up the following circuit. Have your teammate and the TA to double check your wiring.
   ![PZE with GPIO LED](https://cdn-images-1.medium.com/max/1600/0*xch19X3RFpIZdFXw.png)
 
-10. Use git command to retrieve the source code from repository.
+10. Boot up your Pi Zero W again. After login to the Linux, use git command to retrieve the source code from repository like this
+
+```git clone http://github.com/ACANETS/iot-labs```
+
+11. Run the example code by using the following command:
+
+```
+cd iot-labs
+./toggleled.py
+```
+
+12. You should now see the LED is toggled between ON and OFF. 
