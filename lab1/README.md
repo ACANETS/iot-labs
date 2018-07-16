@@ -27,8 +27,8 @@ Please familiarize yourself with the following concepts before proceed with this
 
   ii. __!CAUTION!__ Make sure the colored leads are connected to the correct PINs on the Pi. Refer to the following diagram for connection.
 
-  ![PZW Pinouts](http://pi4j.com/images/j8header-zero.png)
-  ![TTL-serial to PZW](https://learn.adafruit.com/assets/41071)
+  ![PZW Pinouts (pc:pi4y.com)](http://pi4j.com/images/j8header-zero.png)
+  ![TTL-serial to PZW (pc:adafruit.com)](https://learn.adafruit.com/assets/41071)
 
   iii. Have your teammate and TA to help double check the connections.
 
@@ -40,12 +40,15 @@ Please familiarize yourself with the following concepts before proceed with this
 
 6. Login with user ```pi``` and the password given by the instructor.
 
-7. Run command ```pwd```. You should see ```/user/pi``` as the result of this command. If so, then run ```ll``` to see the list of files in your home directory.
+7. Run command ```pwd```. You should see ```/home/pi``` as the result of this command. If so, then run ```ll``` to see the list of files in your home directory.
 
 8. Now, we need to shutdown the Pi and prepare the LED circuit. Run command ```sudo halt```. Wait for the green LED on the Pi to be off. Then unplug the USB-TTL cable from your laptop.
 
-9. Wire up the following circuit. Have your teammate and the TA to double check your wiring.
-  ![PZE with GPIO LED](https://cdn-images-1.medium.com/max/1600/0*xch19X3RFpIZdFXw.png)
+### Your Pi Zero W should be off now before you proceed with the following steps.
+
+9. Wire up the following circuit to connect a LED to the GPIO pin of Pi. Have your teammate and the TA to double check your wiring.
+
+  ![PZE with GPIO LED (pc:medium.com)](https://cdn-images-1.medium.com/max/1600/0*xch19X3RFpIZdFXw.png)
 
 10. Boot up your Pi Zero W again. After login to the Linux, use git command to retrieve the source code from repository like this
 
@@ -58,4 +61,4 @@ cd iot-labs
 ./toggleled.py
 ```
 
-12. You should now see the LED is toggled between ON and OFF. 
+12. You should now see the LED is toggled between ON and OFF.
