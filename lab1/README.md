@@ -27,8 +27,9 @@ Please familiarize yourself with the following concepts before proceed with this
 
   ii. __!CAUTION!__ Make sure the colored leads are connected to the correct PINs on the Pi. Refer to the following diagram for proper connection.
 
-    ![TTL-serial to PZW (pc:adafruit.com)](https://cdn-learn.adafruit.com/assets/assets/000/041/071/original/raspberry_pi_gpio_connection.jpg?1492996515)
-    ![PZW Pinouts (pc:pi4y.com)](http://pi4j.com/images/j8header-zero.png)
+![TTL-serial to PZW (pc:adafruit.com)](https://cdn-learn.adafruit.com/assets/assets/000/041/071/original/raspberry_pi_gpio_connection.jpg?1492996515)
+
+![PZW Pinouts (pc:pi4y.com)](http://pi4j.com/images/j8header-zero.png)
 
   iii. Have your teammate and TA to help double check the connections.
 
