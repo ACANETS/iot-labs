@@ -59,7 +59,6 @@ Please familiarize yourself with the following concepts before proceed with this
 
 ```
 cd iot-labs/lab1
-sudo apt-get install python3-gpiozero
 ./toggleled.py
 ```
 
