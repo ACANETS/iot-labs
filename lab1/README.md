@@ -63,3 +63,9 @@ cd iot-labs/lab1
 ```
 
 12. You should now see the LED is toggled between ON and OFF.
+
+13. If provided USB to MicroUSB cable, you can try to set up the network connection between your laptop and the Pi Zero W over the USB cable. Please follow the instructions of [network setting on Mac or Windows](https://learn.adafruit.com/turning-your-raspberry-pi-zero-into-a-usb-gadget/ethernet-gadget). Test the network connection by running the following commands:
+```
+ping 192.168.7.2
+ssh pi@192.168.7.2
+```
