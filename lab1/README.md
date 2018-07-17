@@ -49,7 +49,7 @@ Please familiarize yourself with the following concepts before proceed with this
 
 9. Wire up the following circuit to connect a LED to the GPIO pin of Pi. Have your teammate and the TA to double check your wiring.
 
-  ![PZE with GPIO LED (pc:medium.com)](https://cdn-images-1.medium.com/max/1600/0*xch19X3RFpIZdFXw.png)
+  ![PZE with GPIO LED](/images/lab1_img.png)
 
 10. Boot up your Pi Zero W again. After login to the Linux, use git command to retrieve the source code from repository like this
 
