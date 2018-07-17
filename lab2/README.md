@@ -14,7 +14,7 @@ Please familiarize yourself with the following concepts before proceeding with t
 * Digital logic. Although most of the sensors require analog input, they produce digital output for microprocessors to process. So we deal with exclusively digital signals, which are based on '0' and '1'. You need to understand the basics of digital logic. You can refer to tutorials such as [this one](https://learn.sparkfun.com/tutorials/digital-logic).
 * Linux. We will use Linux throughout this and other labs. It is different from a Windows environment, but you will soon find it liberate us to perform simple and direct control on devices. You need to know basic Linux commands such as ```ls```, ```sudo```, ```nano``` and ```pwd```.
 * Python. We primarily use Python as our programming language in these labs. You can of course adapt the examples from Python to other languages, but your mileage varies. So pick up a quick tutorial such as [this one](https://www.learnpython.org) if you are new to it.
-* Basics of using Pi Zero W. You have successfully completed lab 1.
+* Basics of using Pi Zero W. You should already successfully complete lab 1.
 
 ## Procedure
 
@@ -49,3 +49,11 @@ pi@raspberrypi:~/$ i2cdetect -y 1
 60: 60 -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 70: -- -- -- -- -- -- -- --
 ```
+
+8. Run the following commands to execute the example program.
+```
+cd ~/iot-labs/lab2
+./read_temp.py
+```
+
+9. Explain what the example program does.
