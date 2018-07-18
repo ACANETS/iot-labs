@@ -58,7 +58,7 @@ cat /proc/asound/cards
 arecord -l
 ```
 
-9. Run the following commands to record an audio sample. Yes, you can sing to the microphone now ;-)
+9. Run the following commands to record an audio sample, and use ```Ctrl+C``` to stop recording. Yes, you can sing to the microphone now ;-)
 ```
 arecord -D plughw:1 -c1 -r 48000 -f S32_LE -t wav -V mono -v file.wav
 ```
