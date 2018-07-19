@@ -70,5 +70,20 @@ arecord -D plughw:1 -c1 -r 48000 -f S32_LE -t wav -V mono -v file.wav
 11. Try the example program to detect beats per minute of a song.
 ```
 cd ~/iot-labs/lab4
-TODO
+jackd -r -d alsa jackd -r -d alsa -d hw:sndrpisimplecar -r 44100 -n 16 &
 ```
+
+12. On your smartphone, begin playing your favorite song. Position the phone's speaker a few inches above the I2S microphone. Make sure the speaker is pointed directly at the microphone port, and run the following commands:
+```
+aubiotrack -j &
+./detect_bpm.py
+```
+
+13. Continue playing the song for about 30 seconds. The beats-per-minute should be printed to the screen.
+
+14. When you are finished, press Ctrl+C and run the following command to reset aubiojack:
+```
+killall aubiojack
+```
+
+15. Repeat steps 12 though 14 with different songs. Try to experiment with both fast and slow songs.

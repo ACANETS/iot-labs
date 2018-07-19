@@ -145,8 +145,8 @@ def process(frames):
                   ' bpm = ', (beat_counts - last_beat_counts)/(actual_time - last_actual_time)*60)
             #we could accumulate the counts and calcuate BMP accumulatively
             # or do the following to reset every 10 seconds
-            #last_actual_time = actual_time
-            #last_beat_counts = beat_counts
+            last_actual_time = actual_time
+            last_beat_counts = beat_counts
         # update last_beat_time    
         last_beat_time = actual_time
                 
