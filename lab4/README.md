@@ -81,9 +81,9 @@ aubiotrack -j &
 
 13. Continue playing the song for about 30 seconds. The beats-per-minute should be printed to the screen.
 
-14. When you are finished, press Ctrl+C and run the following command to reset aubiojack:
+14. When you are finished, press Ctrl+C and run the following command to reset aubiotrack:
 ```
-killall aubiojack
+killall aubiotrack
 ```
 
 15. Repeat steps 12 though 14 with different songs. Try to experiment with both fast and slow songs.
