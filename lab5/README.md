@@ -18,7 +18,7 @@ Please familiarize yourself with the following concepts before proceeding with t
 
 ## Procedure
 
-1. Power on the Pi by connecting the USB cable to your laptop. Login as usual.
+1. Power on the Pi by connecting the USB cable to your laptop. Login as usual over SSH.
 
 2. Check the network interfaces on Pi.
 ```
@@ -32,12 +32,25 @@ You should see an output from the command as follows.
 ping google.com
 ```
 
-4. Run the example program.
+4. Open a second terminal window (Mac/Unix) or PuTTY client (Windows) and login to the device again over SSH.
+
+5. In both windows, navigate to the lab5 directory
 ```
 cd ~/iot-labs/lab5
-./net_example.py
 ```
 
-5. Explain what the example program does.
+6. In one SSH session, run the following command:
+```
+./simple_server.py
+```
+
+7. The server should begin listening on address 127.0.0.1. In the other SSH session, run the client command:
+```
+./simple_client.py
+```
+
+8. Go back to the SSH session running the simple server. It should have a new connection from a client, and prompt you to input a string. Type a message to send to the client and press enter.
+
+9. Looking at the client window, you should see the message you typed appear in the output. The client will then disconnect from the server.
 
 6. Use tcpdump to capture packet traces.
