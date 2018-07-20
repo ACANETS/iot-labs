@@ -2,6 +2,8 @@
 
 Light is magical. LEDs have become the center of attention because new advance in LED technology enables many interesting products and designs. LEDs are much brighter and more colorful. The applications of new LEDs are fun and limitless. In this lab, we will play with a LED type called "DotStar" and learn how to program them to make special light effects.      
 
+The library used in this lab is supplied by Adafruit (www.adafruit.com).
+
 The following topics are covered in this lab:
 * SPI bus and interfacing
 * Level shifting
@@ -47,6 +49,7 @@ Please familiarize yourself with the following concepts before proceeding with t
 11. Run the following commands to execute the example program.
 ```
 cd ~/iot-labs/lab3
+sudo python setup.py install
 ./test_dotstar.py
 ```
 
