@@ -28,9 +28,9 @@ __!CAUTION: Your Pi Zero W should be powered off now until you complete step 1 !
 
 3. Take a picture with your Pi.
 ```
-raspistill -o testimg.jpg
+./capture_img.sh
 ```
-You should see the picture file (testimg.jpb) created.
+You should see the picture file (testimg.jpg) created.
 
 4. Transfer the file to your laptop to view. Note that replace 'YOURGROUP' and 'FILESERVER' with the information provided by the instructor.
 ```
@@ -47,7 +47,7 @@ ping google.com
 4. Run the example program.
 ```
 cd ~/iot-labs/lab6
-./face_detection.py
+./face_detection.py testimg.jpg
 ```
 
 5. Explain what the example program does.

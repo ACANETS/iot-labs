@@ -36,7 +36,7 @@ Please familiarize yourself with the following concepts before proceeding with t
 
 6. Run command ```ls /dev/*i2c*```. You should see ```/dev/i2c-1``` as the output of this command. If not, you need to contact the instructor, or follow [an advanced tutorial](https://learn.sparkfun.com/tutorials/raspberry-pi-spi-and-i2c-tutorial) to enable I<sup>2</sup>C on the Pi.
 
-7. Run the command as follows to see if your temperature sensor is detected. You should see the number ```xx```. If not, you must power off the Pi and check the wiring before you proceed.
+7. Run the command as follows to see if your temperature sensor is detected. You should see the number ```18```. If not, you must power off the Pi and check the wiring before you proceed.
 ```
 pi@raspberrypi:~/$ i2cdetect -y 1
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
@@ -46,14 +46,16 @@ pi@raspberrypi:~/$ i2cdetect -y 1
 30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
-60: 60 -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: 18 -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 70: -- -- -- -- -- -- -- --
 ```
 
 8. Run the following commands to execute the example program.
 ```
 cd ~/iot-labs/lab2
-./read_temp.py
+./read_temp.py C
 ```
+
+You can change the temperature units by changing the argument (the C, for celcius) to an F (fahrenheit) or a K (kelvin).
 
 9. Explain what the example program does.
