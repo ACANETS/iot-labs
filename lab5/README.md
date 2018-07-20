@@ -53,12 +53,12 @@ cd ~/iot-labs/lab5
 
 9. In the terminal running the server, press Ctrl+C to stop running the server.
 
-10. You will now use TCP dump to monitor packets being sent back and forth using the ssh protocol. In one of the two terminal windows, enter the following command:
+10. You will now use tcpdump to monitor packets being sent back and forth using the ssh protocol. In one of the two terminal windows, enter the following command:
 ```
 tcpdump port ssh -i usb0 -w capture.pcap
 ```
 
-11. TCP dump will be monitoring all packets that are passed over the SSH protocol. In the other terminal window, enter the following commands to list the files in the directory.
+11. tcpdump will be monitoring all packets that are passed over the SSH protocol. In the other terminal window, enter the following commands to list the files in the directory.
 ```
 ls
 ll
