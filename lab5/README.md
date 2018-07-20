@@ -51,4 +51,23 @@ cd ~/iot-labs/lab5
 
 8. Looking at the client window, you should see the message you typed appear in the output. The client will then disconnect from the server.
 
-9. TODO: write tcpdump instructions
+9. In the terminal running the server, press Ctrl+C to stop running the server.
+
+10. You will now use tcpdump to monitor packets being sent back and forth using the ssh protocol. In one of the two terminal windows, enter the following command:
+```
+tcpdump port ssh -i usb0 -w capture.pcap
+```
+
+11. tcpdump will be monitoring all packets that are passed over the SSH protocol. In the other terminal window, enter the following commands to list the files in the directory.
+```
+ls
+ll
+ls -lah
+```
+
+12. Go back to the terminal window running tcpdump and press Ctrl+C to terminate command. On the host machine, execute the following command to transfer the 'capture.pcap' file for analysis using wireshark.
+```
+scp pi@192.168.7.2:~/iot-labs/lab5/capture.pcap .
+```
+
+13. Use wireshark to analyze the file.
