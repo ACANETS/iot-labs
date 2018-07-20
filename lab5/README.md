@@ -20,37 +20,35 @@ Please familiarize yourself with the following concepts before proceeding with t
 
 1. Power on the Pi by connecting the USB cable to your laptop. Login as usual over SSH.
 
-2. Check the network interfaces on Pi.
+2. Follow the instructions of [network setting on Mac or Windows](https://learn.adafruit.com/turning-your-raspberry-pi-zero-into-a-usb-gadget/ethernet-gadget). Test the network connection by running the following commands: 
 ```
-ifconfig
-```
-You should see an output from the command as follows.
-![ifconfig output](/images/lab2_ifconfig.png)
-
-3. We now check if your Pi is connected to the Internet.
-```
-ping google.com
+ping 192.168.7.2
+ssh pi@192.168.7.2
 ```
 
-4. Open a second terminal window (Mac/Unix) or PuTTY client (Windows) and login to the device again over SSH.
+3. Open a second terminal window (Mac/Unix) or PuTTY client (Windows) and login to the device again over SSH by running the following commands:
+```
+ping 192.168.7.2
+ssh pi@192.168.7.2
+```
 
-5. In both windows, navigate to the lab5 directory
+4. In both terminal windows, navigate to the lab5 directory
 ```
 cd ~/iot-labs/lab5
 ```
 
-6. In one SSH session, run the following command:
+5. In one SSH session, run the following command:
 ```
 ./simple_server.py
 ```
 
-7. The server should begin listening on address 127.0.0.1. In the other SSH session, run the client command:
+6. The server should begin listening on address 127.0.0.1. In the other SSH session, run the client command:
 ```
 ./simple_client.py
 ```
 
-8. Go back to the SSH session running the simple server. It should have a new connection from a client, and prompt you to input a string. Type a message to send to the client and press enter.
+7. Go back to the SSH session running the simple server. It should have a new connection from a client, and prompt you to input a string. Type a message to send to the client and press enter.
 
-9. Looking at the client window, you should see the message you typed appear in the output. The client will then disconnect from the server.
+8. Looking at the client window, you should see the message you typed appear in the output. The client will then disconnect from the server.
 
-6. Use tcpdump to capture packet traces.
+9. TODO: write tcpdump instructions

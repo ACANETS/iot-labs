@@ -31,7 +31,7 @@ Please familiarize yourself with the following concepts before proceeding with t
   * __LRCLK__ - left/right clock to tell which channel to transmit. Low for left, High for right.
   * __SEL__ - channel selection pin. Default is low, indicating mono and left channel. If High, it is on the right channel.
 
-3. Identify the GPIO pins (10 and 11) of Pi Zero W with the following diagram.
+3. Identify the GPIO pins (24 and 28) of Pi Zero W with the following diagram.
 
 ![PZW Pinouts (pc:pi4y.com)](http://pi4j.com/images/j8header-zero.png)
 
