@@ -70,7 +70,7 @@ arecord -D plughw:1 -c1 -r 48000 -f S32_LE -t wav -V mono -v file.wav
 11. Try the example program to detect beats per minute of a song.
 ```
 cd ~/iot-labs/lab4
-jackd -r -d alsa jackd -r -d alsa -d hw:sndrpisimplecar -r 44100 -n 16 &
+jackd -r -d alsa -d hw:sndrpisimplecar -r 44100 -n 16 &
 ```
 
 12. On your smartphone, begin playing your favorite song. Position the phone's speaker a few inches above the I2S microphone. Make sure the speaker is pointed directly at the microphone port, and run the following commands:
