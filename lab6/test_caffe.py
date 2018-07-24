@@ -12,7 +12,7 @@ group = sys.argv[1]
 image = sys.argv[2]
 
 # retrive html
-url = "http://demo.caffe.berkeleyvision.org/classify_url?imageurl=http%3A%2F%2F35.173.122.2%2F" + group +"%2F" + image
+url = "http://demo.caffe.berkeleyvision.org/classify_url?imageurl=" + image
 
 try:
 	response = urllib2.urlopen(url)
