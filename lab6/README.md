@@ -52,7 +52,9 @@ cd ~/iot-labs/lab6
 
 5. Explain what the example program does.
 
-6. Send the picture to Caffe image classification framework.
+6. Now you can send the picture you took to your laptop and classify it on the Caffe Web Demo. Open Powershell on your laptop and run the following command:
 ```
-./test_caffe.py image_file_name
+pscp.exe pi@<ip.of.your.pi>:/iot-labs/lab6/testimg.jpg .
 ```
+
+7. Open the [Caffe Web Demo](http://demo.caffe.berkeleyvision.org/) and upload the image you copied from the Pi.
