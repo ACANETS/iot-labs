@@ -52,9 +52,14 @@ cd ~/iot-labs/lab6
 
 5. Explain what the example program does.
 
-6. Now you can send the picture you took to your laptop and classify it on the Caffe Web Demo. Open Powershell on your laptop and run the following command:
+6. Now you can send the picture you took to your laptop and classify it on the Caffe Web Demo. Edit upload_img.py by running the command:
 ```
-pscp.exe pi@<ip.of.your.pi>:/iot-labs/lab6/testimg.jpg .
+nano upload_img.py
 ```
 
-7. Open the [Caffe Web Demo](http://demo.caffe.berkeleyvision.org/) and upload the image you copied from the Pi.
+7. In the file, replace every instance of group1 and Group01 with your group number. Replace faces.jpg with testimg.jpg.
+
+8. Run the following command:
+```
+python upload_img.py
+```
