@@ -4,7 +4,7 @@
 
 import socket
 
-group_port = 8007
+group_port = 0
 
 server_ip = '127.0.0.1'
 server_port = group_port
