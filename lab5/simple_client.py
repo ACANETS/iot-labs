@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 import socket
 
-server_ip = '127.0.0.1'
-server_port = 30001
+group_port = 0
+
+server_ip = '35.173.122.2'
+server_port = group_port
 
 print 'Attempting to connect to server at {}:{}'.format(server_ip, server_port)
 

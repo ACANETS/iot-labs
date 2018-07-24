@@ -4,8 +4,10 @@
 
 import socket
 
-server_ip = '127.0.0.1'
-server_port = 30001
+group_port = 0
+
+server_ip = '35.173.122.2'
+server_port = group_port
 
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
