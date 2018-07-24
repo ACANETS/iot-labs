@@ -28,8 +28,8 @@ ssh pi@raspberrypi.local
 
 3. Open a second terminal window (Mac/Unix) or PuTTY client (Windows) and login to the device again over SSH by running the following commands (if you are running Windows, PuTTY should connect via SSH automatically, you do not need to run these commands):
 ```
-ping 192.168.7.2
-ssh pi@192.168.7.2
+ping raspberrypi.local
+ssh pi@raspberrypi.local
 ```
 
 4. In both terminal windows, navigate to the lab5 directory
