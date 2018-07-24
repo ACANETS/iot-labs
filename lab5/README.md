@@ -20,13 +20,13 @@ Please familiarize yourself with the following concepts before proceeding with t
 
 1. Power on the Pi by connecting the USB cable to your laptop. Login as usual over SSH.
 
-2. Follow the instructions of [network setting on Mac or Windows](https://learn.adafruit.com/turning-your-raspberry-pi-zero-into-a-usb-gadget/ethernet-gadget). Test the network connection by running the following commands: 
+2. Follow the instructions of [network setting on Mac or Windows](https://learn.adafruit.com/turning-your-raspberry-pi-zero-into-a-usb-gadget/ethernet-gadget). Test the network connection by running the following commands (if you are running Windows, PuTTY should connect via SSH automatically, you do not need to run these commands): 
 ```
-ping 192.168.7.2
-ssh pi@192.168.7.2
+ping raspberrypi.local 
+ssh pi@raspberrypi.local
 ```
 
-3. Open a second terminal window (Mac/Unix) or PuTTY client (Windows) and login to the device again over SSH by running the following commands:
+3. Open a second terminal window (Mac/Unix) or PuTTY client (Windows) and login to the device again over SSH by running the following commands (if you are running Windows, PuTTY should connect via SSH automatically, you do not need to run these commands):
 ```
 ping 192.168.7.2
 ssh pi@192.168.7.2
@@ -67,7 +67,7 @@ ls -lah
 
 12. Go back to the terminal window running tcpdump and press Ctrl+C to terminate command. On the host machine, execute the following command to transfer the 'capture.pcap' file for analysis using wireshark.
 ```
-scp pi@192.168.7.2:~/iot-labs/lab5/capture.pcap .
+scp pi@raspberrypi.local:~/iot-labs/lab5/capture.pcap .
 ```
 
 13. Use wireshark to analyze the file.
