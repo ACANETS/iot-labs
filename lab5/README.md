@@ -58,10 +58,13 @@ cd ~/iot-labs/lab5
 tcpdump port ssh -i usb0 -w packets.pcap
 ```
 
+if you run the client and server program on local interface 'lo', you need to run the following command instead:
+```
+tcpdump -i lo -s 65535 -w packets.pcap
+```
+
 11. tcpdump will be monitoring all packets that are passed over the SSH protocol. In the other terminal window, enter the following commands to list the files in the directory.
 ```
-ls
-ll
 ls -lah
 ```
 
