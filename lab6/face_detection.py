@@ -24,4 +24,4 @@ print('human faces: ', len(humanfaces))
 for (x, y, w, h) in humanfaces:
     cv2.rectangle(test1, (x,y), (x+w, y+h), (0, 255, 0), 2)
 
-cv2.imwrite("faces.jpg", test1)
+cv2.imwrite("faces_highlighted.jpg", test1)
