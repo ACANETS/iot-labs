@@ -26,7 +26,7 @@ Please familiarize yourself with the following concepts before proceeding with t
 
 2. Plug 74AHCT125 pins into your breadboard.
 
-3. Identify the GPIO pins (10 and 11) of Pi Zero W with the following diagram.
+3. Identify the GPIO pins (12 and 14) of Pi Zero W with the following diagram. We will use GPIO 12 (the MOSI of SPI bus) to control the DAT pin of DotStar, and GPIO 14 (SCLK of SPI) to control the CLK pin of DatStar.
 
 ![PZW Pinouts (pc:pi4y.com)](http://pi4j.com/images/j8header-zero.png)
 
@@ -38,7 +38,7 @@ Please familiarize yourself with the following concepts before proceeding with t
 
 6. Connect the DAT and CLK pins to the proper pins of 74AHCT125. See the diagram above.
 
-7. Connect the battery pack (with 3 AA batteries) to the breadboard. __!CAUTION! Make sure the battery pack is switched off__ Use a separate 5V power rail on the breadboard, different from the 3.3V power for Pi's pins.
+7. Connect the battery pack (with 3 AA batteries) to the breadboard. __!CAUTION! Make sure the battery pack is switched off!__ Use a separate 5V power rail on the breadboard, different from the 3.3V power for Pi's pins.
 
 8. Have your teammate and TA double check the connections.
 
