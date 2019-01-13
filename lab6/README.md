@@ -63,3 +63,6 @@ nano upload_img.py
 ```
 python upload_img.py
 ```
+
+9. You should now be able to see the image on the our web server. You can use the URL of the image to test Caffe image classification demo.
+
