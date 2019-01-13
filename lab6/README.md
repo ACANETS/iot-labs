@@ -47,7 +47,7 @@ ping google.com
 4. Run the example program.
 ```
 cd ~/iot-labs/lab6
-./face_detection.py testimg.jpg
+python ./face_detection.py testimg.jpg
 ```
 
 5. Explain what the example program does.
