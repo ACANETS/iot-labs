@@ -22,7 +22,7 @@ Please familiarize yourself with the following concepts before proceeding with t
 
 1. Identify the pins of 74AHCT125 level shifter with the following diagram.
 
-![74AHCT125 pins](https://cdn-learn.adafruit.com/assets/assets/000/028/914/original/raspberry_pi_level-shifter.png?1449376887)
+![74AHCT125 pins](https://github.com/ACANETS/iot-labs/blob/master/images/levelshifter_diagram.png) 
 
 2. Plug 74AHCT125 pins into your breadboard.
 
