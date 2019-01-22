@@ -30,6 +30,8 @@ Please familiarize yourself with the following concepts before proceeding with t
 
 ![PZW Pinouts (pc:pi4y.com)](http://pi4j.com/images/j8header-zero.png)
 
+![Connecting PZW with LED](https://github.com/ACANETS/iot-labs/blob/master/images/lab3_diagram.png)
+
 ### __!CAUTION!__ Make sure your Pi is powered off before performing the next steps until 9.
 
 4. Connect the proper pins from your Pi to the level shifter. Please ask your teammate or TA to double check the connections.
