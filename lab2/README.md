@@ -24,7 +24,7 @@ Please familiarize yourself with the following concepts before proceeding with t
 
 2. Plug the sensor pins into your breadboard.
 
-3. Identify the I<sup>2</sup>C connectors (SCL, SDA) as well as PWR and GND pins of Pi Zero W with the following diagram.
+3. Identify the I<sup>2</sup>C connectors (SCL, SDA) on GPIO9 and GPIO8, as well as PWR and GND pins of Pi Zero W with the following diagram.
 
 ![PZW Pinouts (pc:pi4y.com)](http://pi4j.com/images/j8header-zero.png)
 
