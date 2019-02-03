@@ -28,41 +28,25 @@ __!CAUTION: Your Pi Zero W should be powered off now until you complete step 1 !
 
 3. Take a picture with your Pi.
 ```
+cd ~/iot-labs/lab6
 ./capture_img.sh
 ```
 You should see the picture file (testimg.jpg) created.
 
-4. Transfer the file to your laptop to view. Note that replace 'YOURGROUP' and 'FILESERVER' with the information provided by the instructor.
+4. Transfer the file to our file/web server to view the image. Note that replace 'YOURGROUP' and 'FILESERVER' with the information provided by the instructor.
 ```
-scp testimg.jpg YOURGROUP@FILESERVER:
+scp -i ~/.ssh/YOURGROUP testimg.jpg YOURGROUP@FILESERVER:/home/iot/YOURGROUP
 ```
 
 5. On your laptop, you can view the image uploaded to the file server by visiting FILESERVER in a Web browser. Your old image file will be overwritten if you do not choose a new file name.
 
-3. We now check if your Pi is connected to the Internet.
-```
-ping google.com
-```
-
-4. Run the example program.
+6. Run the example program to detect faces in your picture.
 ```
 cd ~/iot-labs/lab6
 python ./face_detection.py testimg.jpg
 ```
 
-5. Explain what the example program does.
+7. Explain what the example program does.
 
-6. Now you can send the picture you took to your laptop and classify it on the Caffe Web Demo. Edit upload_img.py by running the command:
-```
-nano upload_img.py
-```
-
-7. In the file, replace every instance of group1 and Group01 with your group number. Replace faces.jpg with testimg.jpg.
-
-8. Run the following command:
-```
-python upload_img.py
-```
-
-9. You should now be able to see the image on the our web server. You can use the URL of the image to test Caffe image classification demo.
+8. You should now be able to see the image on the our web server. You can use the URL of the image to test Caffe image classification demo.
 
