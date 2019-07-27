@@ -53,7 +53,7 @@ pi@raspberrypi:~/$ i2cdetect -y 1
 8. Run the following commands to execute the example program.
 ```
 cd ~/iot-labs/lab2
-./read_temp.py C
+python ./read_temp.py C
 ```
 
 You can change the temperature units by changing the argument (the C, for celcius) to an F (fahrenheit) or a K (kelvin).
