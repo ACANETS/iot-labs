@@ -16,6 +16,7 @@ Please familiarize yourself with the following concepts before proceed with this
 * Python. We primarily use Python as our programming language in these labs. You can of course adapt the examples from Python to other languages, but your mileage varies. So pick up a quick tutorial such as [this one](https://www.learnpython.org) if you are new to it.
 * You need to have a laptop with at least one USB2.0 or USB3.0 port to run the labs. Windows, Mac, Linux laptops should all work, but we have not tested on USB-C ports.
 * You will be provided with a raspberry-pi-zero-w, a MicroSD card, a USB to TTL-serial cable, a breadboard, a LED and, 330 Ohm resistor, and assorted jumper cables.
+* Your board may come presoldered, but if not, make sure to do so.
 
 ## Procedure
 
@@ -51,20 +52,38 @@ Please familiarize yourself with the following concepts before proceed with this
 
   ![PZE with GPIO LED](/images/lab1_img.png)
 
-10. Boot up your Pi Zero W again. After login to the Linux, use git command to retrieve the source code from repository like this
+10. Boot up your Pi Zero W again. To log into the Pi Zero W you will need to open terminal. Once it is open type in
+
+```
+ls /dev/cu.*
+
+screen /dev/cu.SLAB_USBtoUART* 115200
+```
+
+You may need to login to the wifi in order to retrieve any code, so if that is the case, type in
+
+``` sudo raspi-config```
+
+Then go to Network Options, then Wi-fi, and finally input the Wi-fi information. After you are done, exit out of the raspi-config 
+tool.
+
+Afterwards, login to the Linux, and use git command to retrieve the source code from repository like this
 
 ```git clone http://github.com/ACANETS/iot-labs```
 
-11. Run the example code by using the following command:
+12. Run the example code by using the following command:
 
 ```
 cd iot-labs/lab1
-./toggleled.py
+
+sudo apt install python3-gpiozero
+
+python3 toggleled.py
 ```
 
-12. You should now see the LED is toggled between ON and OFF.
+13. You should now see the LED is toggled between ON and OFF.
 
-13. If provided USB to MicroUSB cable, you can try to set up the network connection between your laptop and the Pi Zero W over the USB cable. Please follow the instructions of [network setting on Mac or Windows](https://learn.adafruit.com/turning-your-raspberry-pi-zero-into-a-usb-gadget/ethernet-gadget). Test the network connection by running the following commands:
+14. If provided USB to MicroUSB cable, you can try to set up the network connection between your laptop and the Pi Zero W over the USB cable. Please follow the instructions of [network setting on Mac or Windows](https://learn.adafruit.com/turning-your-raspberry-pi-zero-into-a-usb-gadget/ethernet-gadget). Test the network connection by running the following commands:
 ```
 ping 192.168.7.2
 ssh pi@192.168.7.2
