@@ -67,7 +67,7 @@ You may need to login to the wifi in order to retrieve any code, so if that is t
 Then go to Network Options, then Wi-fi, and finally input the Wi-fi information. After you are done, exit out of the raspi-config 
 tool.
 
-Afterwards, login to the Linux, and use git command to retrieve the source code from repository like this
+Afterwards, login to the pi, and use git command to retrieve the source code from repository like this
 
 ```git clone http://github.com/ACANETS/iot-labs```
 
