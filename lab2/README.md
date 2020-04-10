@@ -43,6 +43,8 @@ git clone https://github.com/adafruit/Adafruit_Python_MCP9808.git
 cd Adafruit_Python_MCP9808
    
 sudo python setup.py install
+
+cd
 ```
 
 7. Run command ```ls /dev/*i2c*```. You should see ```/dev/i2c-1``` as the output of this command. If not, you need to contact the instructor, or follow [an advanced tutorial](https://learn.sparkfun.com/tutorials/raspberry-pi-spi-and-i2c-tutorial) to enable I<sup>2</sup>C on the Pi.
