@@ -35,13 +35,14 @@ Please familiarize yourself with the following concepts before proceeding with t
 5. Power on the Pi and login.
 
 6. Run the following commands to download the necessary files:
-```sudo apt-get install -y i2c-tools
+```
+sudo apt-get install -y i2c-tools
    
-   git clone https://github.com/adafruit/Adafruit_Python_MCP9808.git
+git clone https://github.com/adafruit/Adafruit_Python_MCP9808.git
    
-   cd Adafruit_Python_MCP9808
+cd Adafruit_Python_MCP9808
    
-   sudo python setup.py install
+sudo python setup.py install
 ```
 
 7. Run command ```ls /dev/*i2c*```. You should see ```/dev/i2c-1``` as the output of this command. If not, you need to contact the instructor, or follow [an advanced tutorial](https://learn.sparkfun.com/tutorials/raspberry-pi-spi-and-i2c-tutorial) to enable I<sup>2</sup>C on the Pi.
