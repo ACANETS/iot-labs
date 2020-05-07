@@ -83,7 +83,16 @@ python3 toggleled.py
 
 13. You should now see the LED is toggled between ON and OFF.
 
-14. If provided USB to MicroUSB cable, you can try to set up the network connection between your laptop and the Pi Zero W over the USB cable. Please follow the instructions of [network setting on Mac or Windows](https://learn.adafruit.com/turning-your-raspberry-pi-zero-into-a-usb-gadget/ethernet-gadget). Test the network connection by running the following commands:
+14. Now try to run the the C version. First wire the Pi as shown below, and then execute the code.
+
+![PZE with GPIO LED](/images/blink1.png)
+
+```
+gcc -Wall -o blink blink.c -lwiringPi
+sudo ./blink
+```
+
+15. If provided USB to MicroUSB cable, you can try to set up the network connection between your laptop and the Pi Zero W over the USB cable. Please follow the instructions of [network setting on Mac or Windows](https://learn.adafruit.com/turning-your-raspberry-pi-zero-into-a-usb-gadget/ethernet-gadget). Test the network connection by running the following commands:
 ```
 ping 192.168.7.2
 ssh pi@192.168.7.2
